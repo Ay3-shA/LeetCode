@@ -1,0 +1,39 @@
+# Compiled object files
+*.o
+*.obj
+
+# Compiled binary files
+*.exe
+*.out
+*.app
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Static and dynamic libraries
+*.lib
+*.a
+*.la
+*.lo
+*.dll
+*.so
+*.dylib
+
+# Debug files
+*.dSYM/
+*.stackdump
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# Temporary files
+*.tmp
+*.log
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
