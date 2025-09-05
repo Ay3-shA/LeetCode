@@ -1,9 +1,9 @@
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main(){
-    cout<<"hello ";
-    cout<<"Ayesha";
+// int main(){
+//     cout<<"hello ";
+//     cout<<"Ayesha";
 
-    return 0;
-}
+//     return 0;
+// }
