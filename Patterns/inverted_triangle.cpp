@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
     int n=4;
-    int num=1;
+    // int num=1;
     //outer loop for no. of lines 
     for (int i=0;i<n;i++){
         //print spaces
