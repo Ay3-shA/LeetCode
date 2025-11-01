@@ -1,20 +1,17 @@
 #include<iostream>
 using namespace std;
 
-    //Calculate n!
-void fact(int n){
-    int lastDigit=0;
-    while(n>0){
-        lastDigit+=n%10;
-        n=n/10;
-        int digitSum =+ lastDigit;
+    //Calculate Factorial 
+int factorial(int n){
+    int fact = 1;
+    for(int i=1;i<=n;i++){
+        fact*=i;
     }
+    return fact;
     
 }
 
 int main(){
-    int n=4;
-    cout<<fact;
-
+    cout<<factorial(4);
     return 0;
 }
