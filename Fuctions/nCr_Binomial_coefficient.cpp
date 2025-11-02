@@ -16,10 +16,7 @@ int nCr(int n, int r){
     int fact_r=factorial(r);
     int fact_nmr=factorial(n-r);
 
-    int fact_ncr= fact_n/(fact_r*fact_nmr);
-
-
-    return fact_ncr;
+    return fact_n/(fact_r*fact_nmr);
 }
 
 int main(){
