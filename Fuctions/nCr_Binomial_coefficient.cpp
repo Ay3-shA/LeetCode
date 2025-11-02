@@ -8,10 +8,22 @@ int factorial(int n){
         fact*=i;
     }
     return fact;
-    
+
+}
+
+int nCr(int n, int r){
+    int fact_n=factorial(n);
+    int fact_r=factorial(r);
+    int fact_nmr=factorial(n-r);
+
+    int fact_ncr= fact_n/(fact_r*fact_nmr);
+
+
+    return fact_ncr;
 }
 
 int main(){
-    cout<<factorial(4);
+    int n=8, r=4;
+    cout<<nCr(n, r);
     return 0;
 }
