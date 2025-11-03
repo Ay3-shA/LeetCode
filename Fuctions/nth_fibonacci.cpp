@@ -17,7 +17,7 @@ int fibonacci(int n){
 }
 
 int main(){
-    int n=7;
+    int n=9;
     cout<<fibonacci(n);
     
     return 0;
