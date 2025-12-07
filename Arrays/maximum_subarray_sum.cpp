@@ -34,6 +34,9 @@ int main(){
     for (int i=0;i<n;i++){
         currSum+=arr[i];
         maxSum=max(currSum, maxSum);
+        if(currSum<0){
+            currSum=0;
+        }
     }
     cout<<maxSum;
     return 0;
