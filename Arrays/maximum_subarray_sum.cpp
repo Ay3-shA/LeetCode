@@ -20,11 +20,19 @@ int main(){
 
     //brute force approach of maximum sum array 
     int maxSum= INT_MIN;
-    for (int st=0; st<n; st++){
-        int currSum=0;
-        for (int end=st; end<n; end++){
-            currSum+=arr[end];
-        }
+    // for (int st=0; st<n; st++){
+    //     int currSum=0;
+    //     for (int end=st; end<n; end++){
+    //         currSum+=arr[end];
+    //     }
+    //     maxSum=max(currSum, maxSum);
+    // }
+    // cout<<maxSum;
+
+    //final -- kadane's algorithm
+    int currSum=0;
+    for (int i=0;i<n;i++){
+        currSum+=arr[i];
         maxSum=max(currSum, maxSum);
     }
     cout<<maxSum;
