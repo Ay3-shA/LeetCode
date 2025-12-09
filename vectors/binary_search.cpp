@@ -2,7 +2,8 @@
 #include<vector>
 using namespace std;
 
-int binarySearch (vector<int>& arr1, int n, int target){
+int binarySearch (vector<int>& arr1, int target){
+    int n=arr1.size();
     int start=0, end=n-1;
     while (start<=end){
         int mid = (start + end)/2;
@@ -22,9 +23,8 @@ int binarySearch (vector<int>& arr1, int n, int target){
 int main(){
 
     vector<int> arr1 = {-1, 0, 3, 4, 5, 8, 9 ,12};
-    int n=arr1.size();
     int target = 9;
 
-    cout<<binarySearch(arr1, n, target);
+    cout<<binarySearch(arr1, target);
     return 0;
 }
