@@ -4,14 +4,12 @@ using namespace std;
 int fact(int n){
     //Base Case
     if(n==0){
-        cout<<"1\n";
-        return;
+        return 1;
     }
-    cout<<n<<" ";
     return n*fact(n-1);
 }
 
 int main(){
-    fact(4);
+    cout<<fact(6)<<endl;
     return 0;
 }
