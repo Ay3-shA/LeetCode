@@ -1,8 +1,10 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 void subsetswithDuplicate(vector<int>& arr, vector<int>& ans, int i, vector<vector<int>>& allSubsets){
+    sort(arr.begin(), arr.end());
     //base case 
     if(i==arr.size()){
         //store subsets
@@ -25,7 +27,7 @@ void subsetswithDuplicate(vector<int>& arr, vector<int>& ans, int i, vector<vect
 }
 
 int main(){
-    vector<int> arr = {1,2,2};
+    vector<int> arr = {2,2,1};
     vector<vector<int>> allSubsets;
     
     vector<int> ans; //storing subsets
