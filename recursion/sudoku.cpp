@@ -4,7 +4,7 @@ using namespace std;
 
 bool isSafe(vector<vector<char>>& board, int row, int col, char dig){
     //horizontal
-    for(int j=0; j<9; j++){
+    for(int j= 0 ; j<9; j++){
         if (board[row][j] == dig){
             return false;
         }
@@ -72,6 +72,7 @@ void printBoard(vector<vector<char>>& board) {
         for (int j = 0; j < 9; j++) {
             cout << board[i][j] << " ";
         }
+
         cout << endl;
     }
 }
