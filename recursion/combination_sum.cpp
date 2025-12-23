@@ -48,7 +48,7 @@ int main(){
 
      vector<vector<int>> result = combinationSum(arr, target);
 
-    // PRINT RESULT
+    // print result
     for (auto comb : result) {
         cout << "[ ";
         for (int x : comb) cout << x << " ";
