@@ -42,7 +42,7 @@ int main(){
     string s = "aab";
 
     vector<vector<string>> result = partition(s);
-
+//auto = “Let the compiler decide the type”.
     for (auto part : result) {
         cout << "[ ";
         for (auto str : part) {
