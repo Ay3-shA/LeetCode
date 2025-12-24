@@ -7,6 +7,9 @@ int partition(vector<int>& arr, int start, int end){
     int pivot = arr[end];
     //j pury array py iterate kary ga, sary elements ko pivot k sath compare kary ga 
     for(int j=start; j<end; j++){
+        //for dec if (arr[j]>=pivot) .. 
+
+        //increasing order
         if (arr[j]<=pivot){
             idx++;
             swap(arr[j], arr[idx]); 
