@@ -1,4 +1,4 @@
-//one-pass algorithm ... array py aik dafa pass kiya hy aik loop laga k .. then dusri dafa pass kiya hy baqi loop laga k ..
+//two-pass algorithm ... array py aik dafa pass kiya hy aik loop laga k .. then dusri dafa pass kiya hy baqi loop laga k ..
 //thats why its optimized .. we can have more optimized code as well ..  
 
 #include<iostream>
