@@ -45,7 +45,7 @@ void printArray(vector<int> A){
 }
 
 int main() {
-    vector<int> A = {1, 2, 5, 4, 3};
+    vector<int> A = {1, 2, 6, 4, 3};
 
     nextPermutuion(A);
     printArray(A);
