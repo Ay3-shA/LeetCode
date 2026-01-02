@@ -37,7 +37,7 @@ int main(){
     g.addEdge(1, 3);
     g.addEdge(2, 3);
     g.addEdge(2, 4);
-
+    
     g.printAdjList();
 
     return 0;
