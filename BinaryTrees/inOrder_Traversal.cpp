@@ -43,7 +43,7 @@ void inOrderTrav(Node* root){
         return;
     }
     inOrderTrav(root->left);
-    cout<<root->data<<endl;
+    cout<<root->data<<" ";
     inOrderTrav(root->right);
 
 }
