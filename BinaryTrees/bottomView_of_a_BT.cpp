@@ -37,13 +37,13 @@ Node* buildTree(vector<int> preOrder){
 
 }
 
-//top view of a binary tree
-void topView(Node* root){
+//bottom view of a binary tree
+void bottomView(Node* root){
 
     if(root == NULL){
         return;
     }
-    
+
     queue<pair<Node*, int>> q;
     map<int, int> m;
     q.push({root, 0});
@@ -53,9 +53,7 @@ void topView(Node* root){
         int currHD = q.front().second;
         q.pop();
 
-        if(m.find(currHD) == m.end()){
-            m[currHD] = curr->data;
-        }
+        m[currHD] = curr->data;
 
         if(curr->left!=NULL){
             q.push({curr->left, currHD-1});
@@ -75,7 +73,7 @@ int main(){
 
     Node* root = buildTree(preOrder);
 
-    topView(root);
+    bottomView(root);
 
     return 0;
 }
