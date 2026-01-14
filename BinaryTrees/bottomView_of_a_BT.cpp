@@ -69,11 +69,11 @@ void bottomView(Node* root){
 }
 
 int main(){
-    vector<int> preOrder = {1, 2, -1, -1, 3, 4, -1, -1, 5, -1};
+    vector<int> preOrder = {1, 2, -1, -1, 3, 4, -1, -1, 5, -1, -1};
 
     Node* root = buildTree(preOrder);
 
-    bottomView(root);
+    
 
     return 0;
 }
