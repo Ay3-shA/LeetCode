@@ -45,7 +45,7 @@ void kthLevel(Node* root, int K){
         return;
     }
     if(K==1){
-        cout<<root->data<<" ";
+        cout<<root->data<<"  ";
         return;
     }
 
