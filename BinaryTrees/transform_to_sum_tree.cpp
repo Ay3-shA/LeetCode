@@ -18,7 +18,7 @@ class Node{
 };
 
 static int idx = -1;
-Node* buildTree(vector<int> preOrder){
+Node* buildTree(vector<int> &preOrder){
     idx++;
 
     //Base case
