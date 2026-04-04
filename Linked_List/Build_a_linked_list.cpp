@@ -34,6 +34,34 @@ class List{
         }
     }
 
+    void push_back(int val){
+        Node* newNode = new Node(val); //dynamic
+        if(head == NULL){
+            head = tail = newNode;
+            return;
+        } else {
+            tail->next = newNode;
+            tail = newNode;
+        }
+    }
+
+    void pop_front(){
+    if(head == NULL){
+        cout<<"LL is empty\n";
+        return;
+    }
+
+    if(head == tail){   // only one node
+        delete head;
+        head = tail = NULL;
+        return;
+    }
+
+    Node* temp = head;
+    head = head->next;
+    delete temp;
+}
+
     //print a LL
     void printLL(){
         
@@ -43,7 +71,7 @@ class List{
             cout<<temp->data<<"->";
             temp = temp -> next;
         }
-        cout<<"NULL";
+        cout<<"NULL"<<endl;
     }
 };
 
@@ -56,6 +84,10 @@ int main (){
     ll.push_front(1);
     ll.push_front(2);
     ll.push_front(3);
+
+    ll.push_back(4);
+
+    ll.pop_front();
 
     ll.printLL();
 
