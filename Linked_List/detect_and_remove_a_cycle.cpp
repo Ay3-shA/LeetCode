@@ -106,7 +106,7 @@ class List{
 
     //----------------------------------------------------
 
-    bool hasCycle(){
+    Node* detectAndRemoveCycle(){
         Node* slow = head;
         Node* fast = head;
 
@@ -124,8 +124,9 @@ class List{
         if(!hasCycle){
             return NULL;
         }
-        Node* prev = NULL;
+
         slow = head;
+        Node* prev = NULL;
         while(slow!=fast){
             slow = slow->next;
             prev = fast;
@@ -147,7 +148,7 @@ class List{
         curr = curr->next;
         count++;
     }
-    cout << "..." << endl;
+    cout << "NULL" << endl;
 }
 };
 
@@ -164,7 +165,8 @@ int main (){
 
     ll.makeCycleAtPos(3); 
 
-    cout<< ll.hasCycle();
+    cout<< ll.detectAndRemoveCycle()->data<<endl;
+    ll.printCycle(10);
 
     return 0;
 }
