@@ -108,6 +108,21 @@ class List{
         temp->next = newNode;
     }
 
+    int search(int key){
+        Node* temp = head;
+        int idx = 0 ;
+
+        while(temp!=NULL){
+            if(temp->data == key){
+                return idx;
+            }else{
+                temp = temp->next;
+                idx++;
+            }
+        }
+        return -1;
+    }
+
     //print a LL
     void printLL(){
         
@@ -134,6 +149,8 @@ int main (){
     ll.insert(4,1);
 
     ll.printLL();
+
+    cout<<ll.search(2);
 
     return 0;
 }
