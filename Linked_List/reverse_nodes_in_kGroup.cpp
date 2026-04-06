@@ -23,7 +23,7 @@ class Solution{
         int cnt = 0;
         //check if k nodes exist
         while(cnt<k){
-            if(temp=NULL){
+            if(temp==NULL){
                 return head;
             }
             temp = temp->next;
@@ -47,5 +47,33 @@ class Solution{
 };
 
 int main(){
+
+    // create list: 1->2->3->4->5->6
+    Node* head = new Node(1);
+    head->next = new Node(2);
+    head->next->prev = head;
+
+    head->next->next = new Node(3);
+    head->next->next->prev = head->next;
+
+    head->next->next->next = new Node(4);
+    head->next->next->next->prev = head->next->next;
+
+    head->next->next->next->next = new Node(5);
+    head->next->next->next->next->prev = head->next->next->next;
+
+    int k = 2;
+
+    Solution s;
+    head = s.reverseKGroup(head, k);
+
+    // print result
+    Node* temp = head;
+    while(temp != NULL){
+        cout << temp->data << "->";
+        temp = temp->next;
+    }
+    cout << "NULL";
+
     return 0;
 }
