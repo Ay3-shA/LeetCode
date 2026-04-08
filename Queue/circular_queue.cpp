@@ -60,7 +60,7 @@ int main(){
 
     cq.push(1);
     cq.push(2);
-    cq.push(4);
+    cq.push(3);
 
     cq.pop();
 
