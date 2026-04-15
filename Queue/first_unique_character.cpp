@@ -29,7 +29,7 @@ class Solution{
 int main(){
     Solution obj;
 
-    string s = "level";
+    string s = "leve";
     int result = obj.firstUniqChar(s);
 
     if(result == -1){
