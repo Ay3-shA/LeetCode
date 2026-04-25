@@ -19,7 +19,7 @@ bool isPrime(int n){
 
 int main(){
 
-    int n=10;
+    int n=11;
     for (int i=1;i<=n;i++){
         if (isPrime(i)){
             cout<<i<<" ";
